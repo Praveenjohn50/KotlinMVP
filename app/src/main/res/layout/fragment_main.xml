@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/create_user_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/create_user"/>
+
+    <Button
+            android:id="@+id/send_word_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_user_post"
+            android:layout_centerHorizontal="true"
+            android:text="@string/post_word"/>
+
+    <Button
+            android:id="@+id/start_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/send_word_post"
+            android:layout_centerHorizontal="true"
+            android:text="@string/record"/>
+
+    <Button
+            android:id="@+id/stop_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_record"
+            android:layout_centerHorizontal="true"
+            android:text="@string/stop_record"/>
+    <Button
+            android:id="@+id/play_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stop_record"
+            android:layout_centerHorizontal="true"
+            android:text="@string/play"/>
+    <Button
+            android:id="@+id/play_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play_start"
+            android:layout_centerHorizontal="true"
+            android:text="@string/end"/>
+
+    <TextView
+            android:id="@+id/display_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/play_end"
+            tools:targetApi="jelly_bean"/>
+    <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/display_text_view"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

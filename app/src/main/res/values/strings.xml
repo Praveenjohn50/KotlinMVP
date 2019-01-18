@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyKotlinMvp</string>
+    <string name="create_user">Create User</string>
+    <string name="post_word">Post word</string>
+    <string name="record">Record</string>
+    <string name="stop_record">Stop Record</string>
+    <string name="play">Play</string>
+    <string name="end">End</string>
+</resources>
